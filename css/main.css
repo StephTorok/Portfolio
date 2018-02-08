@@ -1,0 +1,111 @@
+/* **************************************************
+            TABLE OF CONTENTS
+----------------------------------------
+    1. Project details and color and typography info
+    2. CSS Reset
+    3. Global styles (basic styling)
+    4. Nav
+    5. Main Body Content
+    6. Footer Content
+    7. Media Queries
+        7.1 Mid-size Screen
+        7.2 Large Screen
+        7.3 Additional Adjustments
+*************************************************** */
+
+/* *****************************************
+********************************************
+     1. PROJECT DETAILS & COLOR & TYPOGRAPHY GUIDELINES
+
+                    PROJECT DETAILS
+Author: Stephanie Torok
+Project: Portfolio
+Version: 1.1
+Last Updated: 02/07/2018
+---------------------------
+                    COLOR GUIDE
+black: #000;
+background color: #EAE3E0;
+grey tones: #CEC7BC;
+main grey: #58595B;
+dark rose: #7F6C6D;
+links hover: #CEC7BC; (links and buttons)
+greyblue: #6D9EAB;
+whites: #fff;
+---------------------------
+                    TYPOGRAPHY GUIDE
+body & headings: 'Raleway', sans-serif;
+quote: 'Playfair Display', serif;
+    (font-style: italic; --> this needs to be specified in the CSS, otherwise the quote will not display correctly on some mobile devices)
+********************************************
+***************************************** */
+
+/* *****************************************
+     2. CSS RESET (ERIC MEYER MODIFIED)
+******************************************** */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+
+/* *****************************************
+********************************************
+     3. GLOBAL STYLES
+********************************************
+***************************************** */
+body {
+
+    background-color: #E6E4DD;
+}
+#wrapper {
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+
+}
+.fullscreen {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* *****************************************
+********************************************
+     7. MEDIA QUERIES
+********************************************
+***************************************** */
+@media screen and (min-width:900px) {
+    #wrapper {
+        max-width: 1300px;
+
+    }
+
+
+
+
+}
