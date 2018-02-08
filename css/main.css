@@ -4,8 +4,8 @@
     1. Project details and color and typography info
     2. CSS Reset
     3. Global styles (basic styling)
-    4. Nav
-    5. Main Body Content
+    4. Main Body Content
+    5. Nav
     6. Footer Content
     7. Media Queries
         7.1 Mid-size Screen
@@ -84,6 +84,11 @@ body {
     z-index: 2;
 
 }
+/* *****************************************
+********************************************
+     4. MAIN BODY CONTENT
+********************************************
+***************************************** */
 .fullscreen {
     min-height: 100%;
     min-width: 100%;
