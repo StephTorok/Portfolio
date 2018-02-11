@@ -34,24 +34,28 @@ nav ul {
   height: 0; }
 
 nav ul.open {
-  height: auto; }
+  height: auto;
+  background-color: black;
+  opacity: 0.7;
+  margin-top: 0; }
 
 nav ul li a {
+  z-index: 100;
   display: block;
   text-decoration: none;
   padding: 10px;
   font-family: "Actor", sans-serif;
-  color: #6D9EAB;
-  border-bottom: solid 1px #7F6C6D; }
+  color: #6D9EAB; }
 
 nav ul ul li a {
   line-height: 1.1em;
   float: none;
-  width: 90%;
+  width: 100%;
   text-align: left;
   margin: 0;
   padding: 10px 0;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  color: #CEC7BC; }
 
 nav ul li a:hover {
   color: #7F6C6D; }
@@ -61,14 +65,19 @@ nav ul li a:hover {
 
 header .burger-nav {
   display: block;
-  height: 60px;
   width: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  height: 60px;
+  background-color: black;
+  opacity: 0.7; }
 
 .burgerIcon {
   padding-left: 85%;
   padding-top: 12px;
   width: 40px;
   height: auto; }
+
+.logo {
+  float: left; }
 
 /*# sourceMappingURL=main.css.map */
