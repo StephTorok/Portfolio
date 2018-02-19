@@ -2,9 +2,43 @@
 //font-family: 'Lato', sans-serif
 //font-family: 'Mukta Vaani', sans-serif
 
+// Variables
+$blue: #6D9EAB
+$gold: #685636
+$rose: #7F6C6D
+$offWhite: #CEC7BC
+$bgBody: #EAE3E0
+$hoverHeading: 2.4em
+$actor: 'Actor', sans-serif
+
+//Mixins
+
+@mixin cover
+    width: 100%
+    padding: 0 5% 5%
+    color: $offWhite
+    box-sizing: border-box
+    .contentCover
+        position: relative
+    img
+        width: 100%
+    .title
+        font-size: $hoverHeading
+        display: block
+        font-family: $actor
+        text-transform: uppercase
+        text-align: center
+        position: absolute
+        bottom: 45%
+        width: 100%
+    .raute
+        position: absolute
+        margin-top: -100%
+
+
 
 body
-    background-color: #E6E4DD
+    background-color: black
     margin: 0
     padding: 0
 
@@ -13,7 +47,7 @@ body
     box-sizing: border-box
     position: relative
     width: 100%
-    padding: 0
+    padding: 60px 0 0
 
 .fullscreen
     min-height: 100%
@@ -41,7 +75,7 @@ nav ul
 nav ul.open
     height: auto
     background-color: black
-    opacity: .7
+    opacity: .9
     margin-top: 0
 
 nav ul li a
@@ -50,7 +84,7 @@ nav ul li a
     text-decoration: none
     padding: 10px
     font-family: 'Actor', sans-serif
-    color: #6D9EAB
+    color: $blue
 
 nav ul ul li a
     line-height: 1.1em
@@ -59,14 +93,14 @@ nav ul ul li a
     text-align: left
     margin: 0
     padding: 10px 0
-    font-size: 1.2em
-    color: #CEC7BC
+    font-size: 1.4em
+    color: $offWhite
 
 nav ul li a:hover
-    color: #7F6C6D
+    color: $rose
 
 .topLink
-    font-size: 1.6em
+    font-size: 1.8em
 
 header .burger-nav
     display: block
@@ -85,8 +119,8 @@ header .burger-nav
 .logo
     float: left
 
-
-
+.coverImg
+    @include cover
 
 
 
