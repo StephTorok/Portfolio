@@ -7,3 +7,50 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+main.videoIndex:after
+    @include clearIt
+
+// COVER IMAGES
+.coverImgO, .coverImgE
+    width: 100%
+    padding: 0 5% 5%
+    color: $offWhite
+    box-sizing: border-box
+    .contentCover
+        position: relative
+    img
+        width: 100%
+    .title
+        font-size: $hoverHeading
+        display: block
+        font-family: $actor
+        text-transform: uppercase
+        text-align: center
+        position: absolute
+        bottom: 47%
+        width: 100%
+    .subtitle
+        font-size: 1.4em
+        text-transform: uppercase
+        display: block
+        font-family: $actor
+        text-align: center
+        position: absolute
+        bottom: 42%
+        width: 100%
+    .raute
+        position: absolute
+        margin-top: -100%
+@include mQ(651px)
+    .coverImgO, .coverImgE
+        width: 50%
+        float: left
+        .title
+            font-size: 1.2em
+        .subtitle
+            font-size: 1em
+    .coverImgO
+        padding: 0 2.5% 5% 5%
+    .coverImgE
+        padding: 0 5% 5% 2.5%
+

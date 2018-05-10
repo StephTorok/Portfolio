@@ -1,15 +1,17 @@
 //font-family: 'Actor', sans-serif
 //font-family: 'Lato', sans-serif
 body
-    background-color: black
+    background-color: #f1f0ee
     margin: 0
 #wrapper
+    background-color: black
     margin: 0 auto
     box-sizing: border-box
     position: relative
     width: 100%
     padding: 60px 0 0
     min-width: 340px
+    max-width: 1400px
 h1
     color: $gold
     padding-left: 5%
@@ -17,3 +19,5 @@ h1
     font-size: 2.2em
     font-family: $actor
     margin: 80px 0 20px
+    @include mQ(651px)
+        font-size: 1.8em
