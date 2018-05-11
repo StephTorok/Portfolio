@@ -18,6 +18,11 @@ main.videoIndex:after
     box-sizing: border-box
     .contentCover
         position: relative
+        a
+            color: $offWhite
+            &:hover
+                color: $gold
+                transition: 1.5s
     img
         width: 100%
     .title
@@ -41,7 +46,7 @@ main.videoIndex:after
     .raute
         position: absolute
         margin-top: -100%
-@include mQ(651px)
+@include mQ(500px)
     .coverImgO, .coverImgE
         width: 50%
         float: left
@@ -53,4 +58,15 @@ main.videoIndex:after
         padding: 0 2.5% 5% 5%
     .coverImgE
         padding: 0 5% 5% 2.5%
-
+@include mQ(800px)
+    .coverImgO, .coverImgE
+        width: (100% / 3) - 1.5
+        padding: 30px 30px 10% 30px
+        background-color: #f1f0ee
+        border: solid 1px $gold
+        margin: 5px
+    .raute
+        opacity: 0
+        &:hover
+            opacity: 1
+            transition: 2s
