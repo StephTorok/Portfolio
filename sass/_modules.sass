@@ -119,24 +119,47 @@ main.videoIndex:after
         padding: 20px 20px 6% 20px
 
 // DESCRIPTION
-#portPage:after
-    @include clearIt
+#portPage
+    position: relative
+    &:after
+        @include clearIt
 .asideDescription
-    min-height: 600px
+    min-height: 400px
     width: 20%
     float: left
     margin: 10px 3% 0 3%
+    @include mQ(800px)
+        margin: 10px 0 0 3%
+    @include mQ(1000px)
+        width: 200px
+        margin: 10px 0 0 300px
+    @include mQ(1300px)
+        margin: 10px 0 0 380px
+    @include mQ(1500px)
+        margin: 10px 0 0 480px
     img
         width: 100%
         height: 100%
         padding: 5px 5px 30% 5px
         border: solid 1px $gold
-
-
+        @include mQ(800px)
+            max-width: 150px
+            max-height: 200px
+            padding: 10px 10px 50px 10px
 .thumbDescription
-    float: right
-    margin: 10px 5% 0 0
-    width: 67%
+    float: left
+    margin: 10px 0 0 5%
+    width: 65%
+    @include mQ(500px)
+        margin: 10px 0 0 3%
+    @include mQ(1000px)
+        margin: 10px 100px 50px 20px
+        width: 350px
+    @include mQ(1200px)
+        width: 550px
+    @include mQ(1500px)
+        width: 600px
+
     h2
         font-family: $megrim
         font-weight: bold
@@ -148,6 +171,6 @@ main.videoIndex:after
         color: darken($gold, 5%)
     p
         padding-top: 10px
-        font-size: .9em
+        font-size: 1em
         font-family: $actor
         color: #222

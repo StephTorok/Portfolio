@@ -1,0 +1,21 @@
+#gallery
+    display: none
+    @include mQ(1000px)
+        display: block
+        position: absolute
+        top: 10px
+        left: 3%
+        width: 240px
+        @include mQ(1300px)
+            width: 300px
+        @include mQ(1500px)
+            width: 360px
+        img
+            @include rowMaker(8, 3%)
+            padding: 2px 2px 4% 2px
+            border: solid 1px $gold
+            float: left
+            &:hover
+                background-color: black
+                opacity: .9
+                transition: 2.5s
