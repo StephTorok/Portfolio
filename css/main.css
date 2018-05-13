@@ -323,7 +323,6 @@ main.videoIndex:after {
     display: block; }
 
 .asideDescription {
-  min-height: 400px;
   width: 20%;
   float: left;
   margin: 10px 3% 0 3%; }
@@ -353,11 +352,15 @@ main.videoIndex:after {
 
 .thumbDescription {
   float: left;
-  margin: 10px 0 0 5%;
+  margin: 10px 0 20px 5%;
   width: 65%; }
   @media screen and (min-width: 500px) {
     .thumbDescription {
       margin: 10px 0 0 3%; } }
+  @media screen and (min-width: 800px) {
+    .thumbDescription {
+      margin: 10px 0 0 3%;
+      width: 550px; } }
   @media screen and (min-width: 1000px) {
     .thumbDescription {
       margin: 10px 100px 50px 20px;
@@ -382,6 +385,61 @@ main.videoIndex:after {
     font-size: 1em;
     font-family: "Actor", sans-serif;
     color: #222; }
+    .thumbDescription p:last-child {
+      padding-bottom: 20px; }
+
+#content {
+  clear: both;
+  width: 100%;
+  min-width: 340px; }
+  #content .video {
+    margin: 100px 3%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden; }
+    @media screen and (min-width: 700px) {
+      #content .video {
+        margin: 100px 0 0 29%; } }
+    @media screen and (min-width: 800px) {
+      #content .video {
+        margin: 100px 0 0 26%; } }
+    @media screen and (min-width: 1000px) {
+      #content .video {
+        margin: 100px 0 0 300px; } }
+    @media screen and (min-width: 1300px) {
+      #content .video {
+        margin: 100px 0 0 380px; } }
+    @media screen and (min-width: 1500px) {
+      #content .video {
+        margin: 100px 0 0 480px; } }
+    #content .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      @media screen and (min-width: 700px) {
+        #content .video iframe {
+          width: 90%;
+          height: 90%; } }
+      @media screen and (min-width: 800px) {
+        #content .video iframe {
+          width: 80%;
+          height: 80%; } }
+      @media screen and (min-width: 1000px) {
+        #content .video iframe {
+          width: 82%;
+          height: 82%; } }
+      @media screen and (min-width: 1300px) {
+        #content .video iframe {
+          width: 78%;
+          height: 78%; } }
+      @media screen and (min-width: 1500px) {
+        #content .video iframe {
+          width: 65%;
+          height: 65%; } }
 
 footer {
   background-color: black;

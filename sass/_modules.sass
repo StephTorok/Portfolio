@@ -124,8 +124,8 @@ main.videoIndex:after
     &:after
         @include clearIt
 .asideDescription
-    min-height: 400px
     width: 20%
+    // height: auto
     float: left
     margin: 10px 3% 0 3%
     @include mQ(800px)
@@ -148,10 +148,13 @@ main.videoIndex:after
             padding: 10px 10px 50px 10px
 .thumbDescription
     float: left
-    margin: 10px 0 0 5%
+    margin: 10px 0 20px 5%
     width: 65%
     @include mQ(500px)
         margin: 10px 0 0 3%
+    @include mQ(800px)
+        margin: 10px 0 0 3%
+        width: 550px
     @include mQ(1000px)
         margin: 10px 100px 50px 20px
         width: 350px
@@ -159,7 +162,6 @@ main.videoIndex:after
         width: 550px
     @include mQ(1500px)
         width: 600px
-
     h2
         font-family: $megrim
         font-weight: bold
@@ -174,3 +176,49 @@ main.videoIndex:after
         font-size: 1em
         font-family: $actor
         color: #222
+        &:last-child
+            padding-bottom: 20px
+
+// VIDEO STYLING
+#content
+    clear: both
+    width: 100%
+    min-width: 340px
+    .video
+        margin: 100px 3%
+        position: relative
+        padding-bottom: 56.25%
+        padding-top: 0
+        height: 0
+        overflow: hidden
+        @include mQ(700px)
+            margin: 100px 0 0 29%
+        @include mQ(800px)
+            margin: 100px 0 0 26%
+        @include mQ(1000px)
+            margin: 100px 0 0 300px
+        @include mQ(1300px)
+            margin: 100px 0 0 380px
+        @include mQ(1500px)
+            margin: 100px 0 0 480px
+        iframe
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            @include mQ(700px)
+                width: 90%
+                height: 90%
+            @include mQ(800px)
+                width: 80%
+                height: 80%
+            @include mQ(1000px)
+                width: 82%
+                height: 82%
+            @include mQ(1300px)
+                width: 78%
+                height: 78%
+            @include mQ(1500px)
+                width: 65%
+                height: 65%
