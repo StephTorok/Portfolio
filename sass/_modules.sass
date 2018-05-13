@@ -117,3 +117,37 @@ main.videoIndex:after
     .coverImg
         @include rowMaker(4, 2%)
         padding: 20px 20px 6% 20px
+
+// DESCRIPTION
+#portPage:after
+    @include clearIt
+.asideDescription
+    min-height: 600px
+    width: 20%
+    float: left
+    margin: 10px 3% 0 3%
+    img
+        width: 100%
+        height: 100%
+        padding: 5px 5px 30% 5px
+        border: solid 1px $gold
+
+
+.thumbDescription
+    float: right
+    margin: 10px 5% 0 0
+    width: 67%
+    h2
+        font-family: $megrim
+        font-weight: bold
+        font-size: 1.6em
+    h3
+        font-family: $actor
+        font-size: 1.1em
+        padding-bottom: 15px
+        color: darken($gold, 5%)
+    p
+        padding-top: 10px
+        font-size: .9em
+        font-family: $actor
+        color: #222
