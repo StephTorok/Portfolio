@@ -1,0 +1,23 @@
+// MIXINS
+
+//@mixin coverImg
+//    width: 100%
+//    padding: 0 5% 5%
+//    color: $offWhite
+//    box-sizing: border-box
+
+@mixin mQ($arg)
+    @media screen and (min-width: $arg)
+        @content
+
+@mixin clearIt
+    content: ''
+    clear: both
+    display: block
+
+@mixin rowMaker($numPerRow, $margin)
+    width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow)
+    &:nth-child(n)
+        margin: 0 $margin $margin 0
+    &:nth-child(#{$numPerRow}n)
+        margin-right: 0
