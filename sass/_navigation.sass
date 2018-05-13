@@ -1,7 +1,7 @@
 //NAVIGATION
 nav
     padding-top: 0
-    padding-bottom: 30px
+    // padding-bottom: 30px
     position: absolute
     top: 0
     width: 100%
@@ -25,50 +25,35 @@ nav ul li a
     z-index: 100
     display: block
     text-decoration: none
-    padding: 15px 0 15px 40px
-    font-family: 'Actor', sans-serif
-    color: $offWhite
-nav ul ul li
-    border-bottom: none
-    padding-left: 80px
-nav ul ul li:last-child
-    padding-bottom: 0
-nav ul ul li a:first-child
-    padding-top: 0
-nav ul ul li a:last-child
-    padding-bottom: 20px
-nav ul ul li a
-    line-height: 1.1em
-    float: none
-    width: 100%
-    text-align: left
-    margin: 0
-    padding: 10px 0
-    font-size: 1.4em
+    padding: 15px 0 15px 3%
+    font-family: $megrim
     color: $offWhite
 nav ul li a:hover
     color: $gold
+    text-decoration: underline
+    transition: 1.5s
 .navIndex ul.open
     opacity: .9
 .topLink
-    font-size: 1.8em
+    font-size: 1.4em
 header .burger-nav
     display: block
     width: 100%
     cursor: pointer
-    height: 60px
+    height: 50px
     background-color: black
     opacity: .9
     position: relative
     border-bottom: solid 2px $gold
 .burgerIcon
     padding-left: 81%
-    padding-top: 13px
+    padding-top: 14px
+    height: 22px
     display: block
     z-index: 300
     position: absolute
     top: 0
-    right: 5%
+    right: 3%
 @include mQ(800px)
     nav
         background-color: black
@@ -80,45 +65,48 @@ header .burger-nav
         overflow: none
         height: 50px
         display: inline-block
-        width: 42%
+        width: 40%
         float: right
-        margin-right: 5%
+        margin-right: 2%
         text-align: center
         @include mQ(1000px)
-            width: 40%
+            width: 38%
             font-size: 1.2em
         @include mQ(1150px)
-            width: 35%
-    nav ul ul
-        display: none
+            width: 34%
+        @include mQ(1400px)
+            width: 30%
     nav ul li
         border-bottom: none
         display: inline-block
-        width: (100% / 4) - 1
+        width: (100% / 3) - 1
         text-transform: lowercase
         a
             &:hover
                 text-decoration: underline
                 transition: 1.5s
     .topLink
-        padding: 18px 0 0 25px
-        font-family: 'Actor', sans-serif
+        padding: 14px 0 0 25px
+        font-family: $megrim
+        font-weight: bold
         color: $offWhite
-        font-size: 1em
+        font-size: 1.2em
     nav.navIndex
         padding-bottom: 0
     nav.navIndex ul
-        width: 35%
-        @include mQ(900px)
+        width: 50%
+        margin: 0 25%
+        @include mQ(1560px)
             width: 30%
-        @include mQ(1000px)
-            width: 35%
-            font-size: 1.1em
-        @include mQ(1200px)
-            width: 30%
-        @include mQ(1500px)
-            width: 25%
+            margin: 0 2% 0 68%
         li
             width: (100% / 3) - 1
     header .burger-nav
         display: none
+.logo
+    position: absolute
+    top: 5px
+    left: 3%
+    padding: 0
+    margin: 0
+    z-index: 2
