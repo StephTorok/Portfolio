@@ -268,10 +268,9 @@ main.videoIndex:after {
     bottom: 47%;
     width: 100%; }
   .coverImg .subtitle {
-    font-size: 1.4em;
-    text-transform: uppercase;
+    font-size: 1.2em;
     display: block;
-    font-family: "Megrim", cursive;
+    font-family: "Lato", sans-serif;
     text-align: center;
     position: absolute;
     bottom: 42%;
@@ -290,9 +289,9 @@ main.videoIndex:after {
     .coverImg:nth-child(2n) {
       margin-right: 0; }
     .coverImg .title {
-      font-size: 1.2em; }
+      font-size: 1.3em; }
     .coverImg .subtitle {
-      font-size: 1em; } }
+      font-size: 0.9em; } }
 @media screen and (min-width: 760px) {
   .coverImg {
     width: 32%;
@@ -324,6 +323,7 @@ main.videoIndex:after {
 
 .asideDescription {
   width: 20%;
+  min-height: 260px;
   float: left;
   margin: 10px 3% 0 3%; }
   @media screen and (min-width: 800px) {
@@ -332,11 +332,11 @@ main.videoIndex:after {
   @media screen and (min-width: 1000px) {
     .asideDescription {
       width: 200px;
-      margin: 10px 0 0 300px; } }
-  @media screen and (min-width: 1300px) {
+      margin: 10px 0 0 340px; } }
+  @media screen and (min-width: 1200px) {
     .asideDescription {
-      margin: 10px 0 0 380px; } }
-  @media screen and (min-width: 1500px) {
+      margin: 10px 0 0 420px; } }
+  @media screen and (min-width: 1400px) {
     .asideDescription {
       margin: 10px 0 0 480px; } }
   .asideDescription img {
@@ -359,18 +359,14 @@ main.videoIndex:after {
       margin: 10px 0 0 3%; } }
   @media screen and (min-width: 800px) {
     .thumbDescription {
-      margin: 10px 0 0 3%;
-      width: 550px; } }
+      margin: 10px 0 0 3%; } }
   @media screen and (min-width: 1000px) {
     .thumbDescription {
-      margin: 10px 100px 50px 20px;
-      width: 350px; } }
+      margin: 10px 80px 50px 0;
+      width: 38%; } }
   @media screen and (min-width: 1200px) {
     .thumbDescription {
-      width: 550px; } }
-  @media screen and (min-width: 1500px) {
-    .thumbDescription {
-      width: 600px; } }
+      width: 41%; } }
   .thumbDescription h2 {
     font-family: "Megrim", cursive;
     font-weight: bold;
@@ -389,9 +385,15 @@ main.videoIndex:after {
       padding-bottom: 20px; }
 
 #content {
+  box-sizing: border-box;
   clear: both;
   width: 100%;
-  min-width: 340px; }
+  padding-bottom: 350px; }
+  @media screen and (min-width: 700px) {
+    #content {
+      background: url(../images/mockups/bgDune.jpg) top no-repeat;
+      background-size: 100%;
+      padding-top: 30px; } }
   #content .video {
     margin: 100px 3%;
     position: relative;
@@ -407,11 +409,11 @@ main.videoIndex:after {
         margin: 100px 0 0 26%; } }
     @media screen and (min-width: 1000px) {
       #content .video {
-        margin: 100px 0 0 300px; } }
-    @media screen and (min-width: 1300px) {
+        margin: 100px 0 0 340px; } }
+    @media screen and (min-width: 1200px) {
       #content .video {
-        margin: 100px 0 0 380px; } }
-    @media screen and (min-width: 1500px) {
+        margin: 100px 0 0 420px; } }
+    @media screen and (min-width: 1400px) {
       #content .video {
         margin: 100px 0 0 480px; } }
     #content .video iframe {
@@ -432,14 +434,18 @@ main.videoIndex:after {
         #content .video iframe {
           width: 82%;
           height: 82%; } }
-      @media screen and (min-width: 1300px) {
+      @media screen and (min-width: 1200px) {
         #content .video iframe {
           width: 78%;
           height: 78%; } }
-      @media screen and (min-width: 1500px) {
+      @media screen and (min-width: 1400px) {
         #content .video iframe {
           width: 65%;
           height: 65%; } }
+
+.mockup100 {
+  width: 100%;
+  height: auto; }
 
 footer {
   background-color: black;
@@ -539,33 +545,59 @@ footer {
       color: #CEC7BC; }
 
 #gallery {
-  display: none; }
+  box-sizing: border-box;
+  display: block;
+  width: 93%;
+  bottom: 10px;
+  position: absolute;
+  margin: 0 3%; }
   @media screen and (min-width: 1000px) {
     #gallery {
-      display: block;
-      position: absolute;
       top: 10px;
       left: 3%;
-      width: 240px; } }
-  @media screen and (min-width: 1000px) and (min-width: 1300px) {
+      width: 260px;
+      margin: 0; } }
+  @media screen and (min-width: 1200px) {
     #gallery {
-      width: 300px; } }
-  @media screen and (min-width: 1000px) and (min-width: 1500px) {
-    #gallery {
-      width: 360px; } }
-  @media screen and (min-width: 1000px) {
+      width: 340px; } }
+  #gallery li {
+    width: 14.1666666667%;
+    display: inline-block; }
+    #gallery li:nth-child(n) {
+      margin: 0 3% 3% 0; }
+    #gallery li:nth-child(6n) {
+      margin-right: 0; }
+    @media screen and (min-width: 700px) {
+      #gallery li {
+        width: 6.5%; }
+        #gallery li:nth-child(n) {
+          margin: 0 2% 2% 0; }
+        #gallery li:nth-child(12n) {
+          margin-right: 0; } }
+    @media screen and (min-width: 1000px) {
+      #gallery li {
+        width: 18.4%; }
+        #gallery li:nth-child(n) {
+          margin: 0 2% 2% 0; }
+        #gallery li:nth-child(5n) {
+          margin-right: 0; } }
+    @media screen and (min-width: 1200px) {
+      #gallery li {
+        width: 15%; }
+        #gallery li:nth-child(n) {
+          margin: 0 2% 2% 0; }
+        #gallery li:nth-child(6n) {
+          margin-right: 0; } }
+  #gallery img {
+    width: 90%;
+    padding: 5px 5px 30% 5px;
+    border: solid 1px #685636; }
+    #gallery img:hover {
+      background-color: #7F6C6D;
+      opacity: 0.7;
+      transition: 2s; }
+    @media screen and (min-width: 1000px) {
       #gallery img {
-        width: 9.875%;
-        padding: 2px 2px 4% 2px;
-        border: solid 1px #685636;
-        float: left; }
-        #gallery img:nth-child(n) {
-          margin: 0 3% 3% 0; }
-        #gallery img:nth-child(8n) {
-          margin-right: 0; }
-        #gallery img:hover {
-          background-color: black;
-          opacity: 0.9;
-          transition: 2.5s; } }
+        width: 80%; } }
 
 /*# sourceMappingURL=main.css.map */
