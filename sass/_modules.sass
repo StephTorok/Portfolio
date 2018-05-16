@@ -51,7 +51,7 @@ main.videoIndex:after
     @include mQ(1025px)
         display: none
 
-// COVER IMAGES PORTFOLIO PAGE
+// THUMBNAIL IMAGES OF PORTFOLIO PAGE
 #coverImages
     width: 94%
     margin: 0 auto
@@ -84,10 +84,10 @@ main.videoIndex:after
         bottom: 47%
         width: 100%
     .subtitle
-        font-size: 1.4em
-        text-transform: uppercase
+        font-size: 1.2em
+        // text-transform: uppercase
         display: block
-        font-family: $megrim
+        font-family: $lato
         text-align: center
         position: absolute
         bottom: 42%
@@ -101,9 +101,9 @@ main.videoIndex:after
         float: left
         padding: 22px 22px 12% 22px
         .title
-            font-size: 1.2em
+            font-size: 1.3em
         .subtitle
-            font-size: 1em
+            font-size: .9em
 @include mQ(760px)
     .coverImg
         @include rowMaker(3, 2%)
@@ -125,17 +125,17 @@ main.videoIndex:after
         @include clearIt
 .asideDescription
     width: 20%
-    // height: auto
+    min-height: 260px
     float: left
     margin: 10px 3% 0 3%
     @include mQ(800px)
         margin: 10px 0 0 3%
     @include mQ(1000px)
         width: 200px
-        margin: 10px 0 0 300px
-    @include mQ(1300px)
-        margin: 10px 0 0 380px
-    @include mQ(1500px)
+        margin: 10px 0 0 340px
+    @include mQ(1200px)
+        margin: 10px 0 0 420px
+    @include mQ(1400px)
         margin: 10px 0 0 480px
     img
         width: 100%
@@ -154,14 +154,11 @@ main.videoIndex:after
         margin: 10px 0 0 3%
     @include mQ(800px)
         margin: 10px 0 0 3%
-        width: 550px
     @include mQ(1000px)
-        margin: 10px 100px 50px 20px
-        width: 350px
+        margin: 10px 80px 50px 0
+        width: 38%
     @include mQ(1200px)
-        width: 550px
-    @include mQ(1500px)
-        width: 600px
+        width: 41%
     h2
         font-family: $megrim
         font-weight: bold
@@ -181,9 +178,16 @@ main.videoIndex:after
 
 // VIDEO STYLING
 #content
+    box-sizing: border-box
     clear: both
     width: 100%
-    min-width: 340px
+
+    // min-width: 340px
+    padding-bottom: 350px
+    @include mQ(700px)
+        background: url(../images/mockups/bgDune.jpg) top no-repeat
+        background-size: 100%
+        padding-top: 30px
     .video
         margin: 100px 3%
         position: relative
@@ -196,10 +200,10 @@ main.videoIndex:after
         @include mQ(800px)
             margin: 100px 0 0 26%
         @include mQ(1000px)
-            margin: 100px 0 0 300px
-        @include mQ(1300px)
-            margin: 100px 0 0 380px
-        @include mQ(1500px)
+            margin: 100px 0 0 340px
+        @include mQ(1200px)
+            margin: 100px 0 0 420px
+        @include mQ(1400px)
             margin: 100px 0 0 480px
         iframe
             position: absolute
@@ -216,9 +220,14 @@ main.videoIndex:after
             @include mQ(1000px)
                 width: 82%
                 height: 82%
-            @include mQ(1300px)
+            @include mQ(1200px)
                 width: 78%
                 height: 78%
-            @include mQ(1500px)
+            @include mQ(1400px)
                 width: 65%
                 height: 65%
+
+// #CONTENT IMAGES
+.mockup100
+    width: 100%
+    height: auto
