@@ -33,11 +33,49 @@ h1 {
   padding-left: 5%;
   text-transform: uppercase;
   font-size: 2.2em;
-  font-family: "Actor", sans-serif;
+  font-family: "Megrim", cursive;
   margin: 80px 0 20px; }
   @media screen and (min-width: 651px) {
     h1 {
       font-size: 1.8em; } }
+
+h2 {
+  font-family: "Megrim", cursive;
+  font-weight: bold;
+  font-size: 1.6em; }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+  color: #57482d; }
+
+p {
+  padding-top: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Lato", sans-serif;
+  color: #222; }
+  p:last-child {
+    padding-bottom: 20px; }
+
+a {
+  color: #8a7247;
+  text-decoration: none;
+  font-weight: bold; }
+  a:hover {
+    color: #030302; }
+
+.slider {
+  background-color: black;
+  overflow-y: hidden;
+  max-height: 1000px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); }
+
+.slider.closed {
+  max-height: 0; }
 
 nav {
   padding-top: 0;
@@ -215,13 +253,18 @@ main.videoIndex:after {
       margin: 100px 15% 0 15%; } }
 
 .introRemember {
-  font-size: 2em; }
+  font-family: "Megrim", cursive;
+  color: #685636;
+  font-size: 2em;
+  line-height: 1; }
   @media screen and (min-width: 760px) {
     .introRemember {
       font-size: 2.6em; } }
 
 .ruskin {
   font-style: italic;
+  font-family: "Megrim", cursive;
+  color: #685636;
   margin: 0 -8% 0 0;
   padding-top: 10px; }
   @media screen and (min-width: 1560px) {
@@ -248,6 +291,9 @@ main.videoIndex:after {
   background-color: #f1f0ee;
   border: solid 1px #685636;
   margin: 3% 0; }
+  .coverImg:hover {
+    background-color: #685636;
+    transition: 2.5s; }
   .coverImg .contentCover {
     position: relative; }
     .coverImg .contentCover a {
@@ -367,33 +413,23 @@ main.videoIndex:after {
   @media screen and (min-width: 1200px) {
     .thumbDescription {
       width: 41%; } }
-  .thumbDescription h2 {
-    font-family: "Megrim", cursive;
-    font-weight: bold;
-    font-size: 1.6em; }
-  .thumbDescription h3 {
-    font-family: "Actor", sans-serif;
-    font-size: 1.1em;
-    padding-bottom: 15px;
-    color: #57482d; }
-  .thumbDescription p {
-    padding-top: 10px;
-    font-size: 1em;
-    font-family: "Actor", sans-serif;
-    color: #222; }
-    .thumbDescription p:last-child {
-      padding-bottom: 20px; }
 
 #content {
   box-sizing: border-box;
   clear: both;
   width: 100%;
-  padding-bottom: 350px; }
+  background: url(../images/mockups/bgDune.jpg) bottom no-repeat;
+  background-size: 100%;
+  padding-bottom: 240px; }
+  @media screen and (min-width: 540px) {
+    #content {
+      padding-bottom: 320px; } }
   @media screen and (min-width: 700px) {
     #content {
       background: url(../images/mockups/bgDune.jpg) top no-repeat;
       background-size: 100%;
-      padding-top: 30px; } }
+      padding-top: 30px;
+      padding-bottom: 200px; } }
   #content .video {
     margin: 100px 3%;
     position: relative;
@@ -403,19 +439,19 @@ main.videoIndex:after {
     overflow: hidden; }
     @media screen and (min-width: 700px) {
       #content .video {
-        margin: 100px 0 0 29%; } }
+        margin: 0 0 0 29%; } }
     @media screen and (min-width: 800px) {
       #content .video {
-        margin: 100px 0 0 26%; } }
+        margin: 0 0 0 26%; } }
     @media screen and (min-width: 1000px) {
       #content .video {
-        margin: 100px 0 0 340px; } }
+        margin: 0 0 0 340px; } }
     @media screen and (min-width: 1200px) {
       #content .video {
-        margin: 100px 0 0 420px; } }
+        margin: 30px 0 0 420px; } }
     @media screen and (min-width: 1400px) {
       #content .video {
-        margin: 100px 0 0 480px; } }
+        margin: 30px 0 0 480px; } }
     #content .video iframe {
       position: absolute;
       top: 0;
@@ -446,6 +482,220 @@ main.videoIndex:after {
 .mockup100 {
   width: 100%;
   height: auto; }
+
+.infoLogo {
+  background-color: #619f98; }
+  .infoLogo h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoLogo p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoLogo p:last-child {
+      padding-bottom: 30px; }
+
+.infoArtDeco {
+  background-color: #3a8d9f; }
+  .infoArtDeco h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoArtDeco p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoArtDeco p:last-child {
+      padding-bottom: 30px; }
+
+.infoTrailer {
+  background-color: #bf7034; }
+  .infoTrailer h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoTrailer p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoTrailer p:last-child {
+      padding-bottom: 30px; }
+
+.infoFolger {
+  background-color: #685636;
+  padding-bottom: 100px; }
+  .infoFolger h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoFolger p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoFolger p:last-child {
+      padding-bottom: 30px; }
+
+.slideshow-container {
+  max-width: 200px;
+  float: right;
+  margin: 30px 10% -60px 60%; }
+  .slideshow-container .mySlides {
+    display: none; }
+    .slideshow-container .mySlides img {
+      max-width: 100%;
+      vertical-align: middle; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.8; }
+  to {
+    opacity: 1; } }
+.infoGermany {
+  background-color: #c4b098; }
+  .infoGermany h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoGermany p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoGermany p:last-child {
+      padding-bottom: 30px; }
+
+.infoSc {
+  background-color: #685636; }
+  .infoSc h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoSc p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoSc p:last-child {
+      padding-bottom: 30px; }
+
+.infoImcpPort {
+  background-color: #d4bf90; }
+  .infoImcpPort h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoImcpPort p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoImcpPort p:last-child {
+      padding-bottom: 30px; }
+
+.infoImcpPortPoster {
+  background-color: #cc4d16; }
+  .infoImcpPortPoster h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoImcpPortPoster p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoImcpPortPoster p:last-child {
+      padding-bottom: 30px; }
+
+.infoImcpPromo {
+  background-color: #cf6e23; }
+  .infoImcpPromo h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoImcpPromo p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoImcpPromo p:last-child {
+      padding-bottom: 30px; }
+
+.infoDakha {
+  background-color: #bcbdb7; }
+  .infoDakha h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoDakha p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoDakha p:last-child {
+      padding-bottom: 30px; }
+
+.infoBook {
+  background-color: #bd2011; }
+  .infoBook h3 {
+    padding: 3%;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -80px 0; }
+  .infoBook p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .infoBook p:last-child {
+      padding-bottom: 30px; }
 
 footer {
   background-color: black;
@@ -593,8 +843,8 @@ footer {
     padding: 5px 5px 30% 5px;
     border: solid 1px #685636; }
     #gallery img:hover {
-      background-color: #7F6C6D;
-      opacity: 0.7;
+      background-color: #7c6848;
+      opacity: 0.9;
       transition: 2s; }
     @media screen and (min-width: 1000px) {
       #gallery img {
