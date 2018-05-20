@@ -4,13 +4,8 @@ body
     background-color: $bgBody
     margin: 0
 #wrapper
+    @include wrapper
     background-color: $bgBody
-    margin: 0 auto
-    box-sizing: border-box
-    position: relative
-    width: 100%
-    padding: 60px 0 40px
-    min-width: 340px
 h1
     color: $gold
     padding-left: 5%
@@ -43,12 +38,8 @@ a
     font-weight: bold
     &:hover
         color: darken($gold, 30%)
-.slider
-    background-color: black
-    overflow-y: hidden
-    max-height: 1000px
-    transition-property: all
-    transition-duration: .5s
-    transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
-.slider.closed
-    max-height: 0
+.contained
+    max-width: 1400px
+    margin: 0 auto
+.clearIt
+    @include clearIt
