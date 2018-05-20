@@ -10,8 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Megrim|Actor|Lato:300,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="../favicon.ico">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="../favicon.ico">
-
+    <link rel="stylesheet" href="../css/rotating-slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -52,20 +53,44 @@
         </div>
 
         <section id="content">
-            <img class="mockup100" src="../images/mockups/notmyculture_01.jpg" alt="bookcover">
-            <img class="mockup100" src="../images/mockups/notmyculture_02.jpg" alt="bookcover">
-            <img class="mockup100" src="../images/mockups/notmyculture_03.jpg" alt="bookcover">
-            <img class="mockup100" src="../images/mockups/notmyculture_04.jpg" alt="bookcover">
-        </section> <!-- end section content -->
-    </section> <!-- end section portPage -->
+           <div class="infoGermany">
+                <h3>More Info About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id veritatis natus doloribus eos dolore tempora soluta, eum, quo tenetur temporibus illo impedit porro. Nihil nesciunt aperiam delectus, distinctio, minus veritatis?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque corporis dolor obcaecati, illo saepe rerum distinctio cupiditate recusandae perspiciatis quasi doloribus nulla error, nisi libero pariatur exercitationem nihil nesciunt dolorum..</p>
+            </div>
+
+        <section id="rotator">
+            <div class="rotating-slider">
+                  <ul class="slides">
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    </ul>
+                </div>
+
+        </section> <!-- end section rotator -->
+    </section> <!-- end section content -->
+</section> <!-- end section portPage -->
 
     <footer class="footerPort">
         <p>&copy; 2018 Stephanie Torok</p>
     </footer>
 </div> <!-- end div wrapper-->
-
+<script src="../scripts/jquery.rotating-slider.js"></script>
+<script>
+    $(function(){
+    $('.rotating-slider').rotatingSlider({
+		slideHeight : Math.min(360, window.innerWidth -80),
+		slideWidth : Math.min(480, window.innerWidth -80),
+	});
+});
+    </script>
+<script src="../scripts/menu.js"></script>
 </body>
 
-<script src="../scripts/menu.js"></script>
+
 
 </html>

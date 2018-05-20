@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Megrim|Actor|Lato:300,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="../favicon.ico">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="../favicon.ico">
-
+    <link rel="stylesheet" href="../css/rotating-slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -46,18 +46,46 @@
                <img src="../images/logoAnimation.jpg" alt="logo image">
           </aside>
             <div class="thumbDescription">
-                   <h2>Logo Animation</h2>
-                   <h3>Bold Bear Graphics</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dignissimos doloribus fuga architecto et excepturi, laboriosam ab corporis, adipisci ad dolor animi sequi repellat est officiis, quae earum accusamus quos.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sint fugiat in quae laudantium obcaecati recusandae optio soluta magnam ullam, tempora cum, quia laboriosam iure cumque facere itaque dolorem molestiae.</p>
+               <h2>Logo Animation</h2>
+               <h3>Bold Bear Graphics</h3>
+               <p>The animated logo consists of a bear within  several circles and rounded rectangles that
+                depict a camera lens and an attached viewfinder.
+                </p>
+                <p>The concept was to animate it in a fun and playful way and to have the bear play around with the individual shapes that will eventually come together as the whole logo. The background is a beach scene with a setting sun and a camera which takes pictures of the bear.</p>
             </div>
         </div>
 
-        <section id="content">
+        <section id="content" class="padVideo">
             <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Hcah4nxlxAk?rel=0&amp;showinfo=0" allowfullscreen></iframe>
             </div>
-            <img class="mockup100" src="../images/mockups/Logo_rubberStamp.jpg" alt="bookcover">
-            <img class="mockup100" src="../images/mockups/bbgbusi.jpg" alt="bookcover">
+            <div class="infoLogo">
+                <h3>The Logo</h3>
+                <p>The logo itself was designed for a small business called <em>Bold Bear Graphics</em> that sells postcards, art prints, unique souvenirs, upcycled accent furniture, and clothing. Since these are very different items that are difficult to visualize as an entity, I decided to go for a more universal logo that expresses the company name rather than its products. The design incorparates camera features since the camera is the main tool used for creating most of the products.</p>
+                <p>It was designed to be versatile, fun, bold and solid so it can be used as a clothing label of about 1x1 inches and as a stamp image on the back of postcards. It can be used in different color schemes to attract different audiences.</p>
+            </div>
+            <section class="contained">
+            <img class="mockup100" src="../images/mockups/Logo_rubberStamp.jpg" alt="stamp" />
+            <img class="mockup100" src="../images/mockups/bbgbusi.jpg" alt="business cards" />
+            <div class="clearIt"></div>
+            </section>
+            <section id="rotator2">
+            <div class="rotating-slider">
+                  <ul class="slides">
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                    <li><div class="inner"></div></li>
+                  </ul>
+                </div>
+            </section> <!-- end section rotator -->
+            <div class="infoLogo">
+                <h3>The Music</h3>
+                 <p>The music was created in a digital music creation studio using a loop and several soundeffects like a camera shutter, seagulls and ocean waves.</p>
+            </div>
+
         </section> <!-- end section content -->
     </section> <!-- end section portPage -->
 
@@ -65,9 +93,19 @@
         <p>&copy; 2018 Stephanie Torok</p>
     </footer>
 </div> <!-- end div wrapper-->
+<script src="../scripts/menu.js"></script>
+<script src="../scripts/jquery.rotating-slider.js"></script>
+<script>
+    $(function(){
+    $('.rotating-slider').rotatingSlider({
+		slideHeight : Math.min(360, window.innerWidth -80),
+		slideWidth : Math.min(480, window.innerWidth - 80),
+	});
+});
+</script>
 
 </body>
 
-<script src="../scripts/menu.js"></script>
+
 
 </html>

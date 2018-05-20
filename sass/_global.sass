@@ -4,19 +4,42 @@ body
     background-color: $bgBody
     margin: 0
 #wrapper
+    @include wrapper
     background-color: $bgBody
-    margin: 0 auto
-    box-sizing: border-box
-    position: relative
-    width: 100%
-    padding: 60px 0 40px
-    min-width: 340px
 h1
     color: $gold
     padding-left: 5%
     text-transform: uppercase
     font-size: 2.2em
-    font-family: $actor
+    font-family: $megrim
     margin: 80px 0 20px
     @include mQ(651px)
         font-size: 1.8em
+h2
+    font-family: $megrim
+    font-weight: bold
+    font-size: 1.6em
+h3
+    font-family: $lato
+    font-size: 1.1em
+    padding-bottom: 15px
+    color: darken($gold, 5%)
+p
+    padding-top: 10px
+    font-size: 1em
+    line-height: 1.4
+    font-family: $lato
+    color: #222
+    &:last-child
+        padding-bottom: 20px
+a
+    color: lighten($gold, 10%)
+    text-decoration: none
+    font-weight: bold
+    &:hover
+        color: darken($gold, 30%)
+.contained
+    max-width: 1400px
+    margin: 0 auto
+.clearIt
+    @include clearIt
