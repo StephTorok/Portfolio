@@ -1,4 +1,4 @@
-// THUMBNAIL IMAGES LARGE / PORTFOLIO PAGE
+// THUMBNAIL GALLERY LARGE / PORTFOLIO PAGE
 #coverImages
     width: 94%
     margin: 0 auto
@@ -100,70 +100,3 @@
             transition: 2s
         @include mQ(1000px)
             width: 80%
-
-// SLIDESHOW DER FOLGER COVER IMAGES
-.slideshow-container
-    max-width: 200px
-    float: right
-    margin: 30px 10% -60px 60%
-    .mySlides
-        display: none
-        img
-            max-width: 100%
-            vertical-align: middle
-.fade
-    -webkit-animation-name: fade
-    -webkit-animation-duration: 2s
-    animation-name: fade
-    animation-duration: 2s
-@-webkit-keyframes fade
-    from
-        opacity: .8
-    to
-        opacity: 1
-@keyframes fade
-    from
-        opacity: .8
-    to
-        opacity: 1
-
-// #CONTENT IMAGES
-.mockup100
-    width: 100%
-    height: auto
-    @include mQ (800px)
-        width: 50%
-        float: left
-
-// JOSHUA TREE BACKGROUND IMAGE
-.joshuaTree
-    display: block
-    width: 100%
-    @include mQ (700px)
-        display: none
-
-// IMAGE SLICER ACCORDION
-.vAccordion
-    width: 100%
-    background-color: red
-    padding: 10% 0
-.accordion
-    width: 80%x
-    margin: auto
-    height: 100%
-    overflow: hidden
-    border: 1px solid black
-    li
-        width: 100%
-        display: block
-        position: relative
-        float: left
-        border-left: solid 1px $gold
-        transition: all 0.5s
-    img
-        width: 100%
-        height: auto
-.accordion ul:hover li
-    width: 10%
-.accordion ul li:hover
-    width: 80%
