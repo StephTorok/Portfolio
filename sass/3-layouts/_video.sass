@@ -1,0 +1,56 @@
+// VIDEO STYLING
+#content
+    box-sizing: border-box
+    clear: both
+    width: 100%
+    background: url(../images/mockups/bgDune.jpg) bottom no-repeat
+    background-size: 100%
+    padding-bottom: 200px
+    @include mQ(540px)
+        padding-bottom: 320px
+    @include mQ(700px)
+        background: url(../images/mockups/bgDune.jpg) top no-repeat
+        background-size: 100%
+        padding-bottom: 200px
+    .video
+        margin: 100px 3%
+        position: relative
+        padding-bottom: 56.25%
+        padding-top: 0
+        height: 0
+        overflow: hidden
+        @include mQ(700px)
+            margin: 0 0 0 29%
+        @include mQ(800px)
+            margin: 0 0 0 26%
+        @include mQ(1000px)
+            margin: 0 0 0 340px
+        @include mQ(1200px)
+            margin: 30px 0 0 420px
+        @include mQ(1400px)
+            margin: 30px 0 0 480px
+        iframe
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            @include mQ(700px)
+                width: 90%
+                height: 90%
+            @include mQ(800px)
+                width: 80%
+                height: 80%
+            @include mQ(1000px)
+                width: 82%
+                height: 82%
+            @include mQ(1200px)
+                width: 78%
+                height: 78%
+            @include mQ(1400px)
+                width: 65%
+                height: 65%
+.padVideo
+    padding-top: 0
+    @include mQ(700px)
+        padding-top: 30px
