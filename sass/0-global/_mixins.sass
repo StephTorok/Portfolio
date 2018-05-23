@@ -5,9 +5,9 @@
         @content
 
 @mixin clearIt
-    content: ''
-    clear: both
+    content: ""
     display: block
+    clear: both
 
 @mixin rowMaker($numPerRow, $margin)
     width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow)
@@ -65,3 +65,20 @@
     background-attachment: fixed
     position: relative
     background-position: center
+
+@mixin button
+    display: block
+    width: 200px
+    padding: 8px
+    border: solid 1px $gold
+    border-radius: 8px
+    text-align: center
+@mixin a-button
+    cursor: pointer
+    padding: 15px 0
+    font-family: $megrim
+    color: $offWhite
+    &:hover
+        color: $gold
+        text-decoration: underline
+        transition: 1.5s
