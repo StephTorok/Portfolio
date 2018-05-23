@@ -1,12 +1,14 @@
 // #CONTENT IMAGES
-.mockup100
+.mockup100, .mockup50, .mockup25
     width: 100%
     height: auto
-.mockup50
-    width: 100%
-    height: auto
+.mockup50, .mockup25
     @include mQ (800px)
         width: 50%
+        float: left
+.mockup25
+    @include mQ (1400px)
+        width: 25%
         float: left
 
 // JOSHUA TREE BACKGROUND IMAGE
@@ -15,3 +17,13 @@
     width: 100%
     @include mQ (700px)
         display: none
+
+//3D IMAGES
+.img_3d
+    display: block
+    margin: 0 auto
+    max-width: 100%
+.img_3dFooter
+    display: block
+    margin: -100px auto 0
+    max-width: 100%

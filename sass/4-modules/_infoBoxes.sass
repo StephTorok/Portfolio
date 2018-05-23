@@ -8,10 +8,17 @@
 .infoTrailer
     @include addInfo
     background-color: #bf7034
+    a
+        color: lighten($trailer, 25%)
+        &:hover
+            color: darken($gold, 30%)
 .infoFolger
     @include addInfo
     background-color: $gold
     padding-bottom: 30px
+.infoBorrego
+    @include addInfo
+    background-color: $borrego
 .infoGermany
     @include addInfo
     background-color: #c4b098
@@ -32,4 +39,10 @@
     background-color: #bcbdb7
 .infoBook
     @include addInfo
+    // @include clearIt
     background-color: #bd2011
+.infoList
+    @include infoList
+.infoCopyright
+    font-size: .8em
+    color: #222
