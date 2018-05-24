@@ -10,24 +10,27 @@
         padding-bottom: 320px
     @include mQ(700px)
         background: url(../images/mockups/bgDune.jpg) top no-repeat
-        background-size: 100%
+        background-size: 130%
         padding-bottom: 200px
     .video
-        margin: 100px 3%
+        box-sizing: border-box
+        margin: 50px 3%
         position: relative
         padding-bottom: 56.25%
         padding-top: 0
         height: 0
         overflow: hidden
-        @include mQ(700px)
+
+
+        //@include mQ(700px)
             margin: 0 0 0 29%
-        @include mQ(800px)
+        //@include mQ(800px)
             margin: 0 0 0 26%
-        @include mQ(1000px)
-            margin: 0 0 0 340px
-        @include mQ(1200px)
+        //include mQ(700px)
+            margin: 100px 10%
+        //@include mQ(1200px)
             margin: 30px 0 0 420px
-        @include mQ(1400px)
+        //@include mQ(1400px)
             margin: 30px 0 0 480px
         iframe
             position: absolute
@@ -35,21 +38,22 @@
             left: 0
             width: 100%
             height: 100%
-            @include mQ(700px)
-                width: 90%
-                height: 90%
-            @include mQ(800px)
-                width: 80%
-                height: 80%
-            @include mQ(1000px)
-                width: 82%
-                height: 82%
-            @include mQ(1200px)
-                width: 78%
-                height: 78%
-            @include mQ(1400px)
-                width: 65%
-                height: 65%
+
+//            @include mQ(700px)
+//                width: 90%
+//                height: auto
+//            @include mQ(800px)
+//                width: 80%
+//                height: auto
+//            @include mQ(1000px)
+//                width: 82%
+//                height: auto
+//            @include mQ(1200px)
+//                width: 78%
+//                height: auto
+//            @include mQ(1400px)
+//                width: 65%
+//                height: auto
     &:after
         @include clearIt
 .padVideo
