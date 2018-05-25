@@ -63,16 +63,13 @@
         @include mQ (700px)
             margin-right: 10%
     a
-        font-size: .9em
-        font-family: $lato
-        line-height: 2
-        padding-right: 10px
+        @include listInsp
         color: $blue
-        text-decoration: none
-        &:hover
-            color: $offWhite
-        @include mQ (700px)
-            line-height: 1.6
+    h4
+        @include listInsp
+        font-size: 1em
+        font-weight: bold
+        color: $offWhite
 .aboutInsp .h3Insp
     font-size: 3.6em
     color: $rose

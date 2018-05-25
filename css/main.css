@@ -248,12 +248,26 @@ a {
     font-family: "Lato", sans-serif;
     line-height: 2;
     padding-right: 10px;
-    color: #6D9EAB;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #6D9EAB; }
     .aboutInsp a:hover {
       color: #CEC7BC; }
     @media screen and (min-width: 700px) {
       .aboutInsp a {
+        line-height: 1.6; } }
+  .aboutInsp h4 {
+    font-size: 0.9em;
+    font-family: "Lato", sans-serif;
+    line-height: 2;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #CEC7BC; }
+    .aboutInsp h4:hover {
+      color: #CEC7BC; }
+    @media screen and (min-width: 700px) {
+      .aboutInsp h4 {
         line-height: 1.6; } }
 
 .aboutInsp .h3Insp {
@@ -1329,5 +1343,45 @@ h3.infoScTitle {
     margin: 0; }
   .infoAbout p {
     color: #CEC7BC; }
+
+.contact {
+  background-color: #e3d1bd;
+  margin-top: -5px; }
+  .contact h3 {
+    clear: both;
+    padding: 80px 3% 0;
+    font-family: "Megrim", cursive;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+    font-size: 5em;
+    margin: 0 0 -40px 0; }
+    @media screen and (min-width: 700px) {
+      .contact h3 {
+        padding: 80px 12% 0; } }
+    @media screen and (min-width: 1000px) {
+      .contact h3 {
+        padding: 80px 20% 0; } }
+  .contact p {
+    padding: 10px 10% 0 15%;
+    text-align: right;
+    color: black; }
+    .contact p:last-child {
+      padding-bottom: 100px; }
+    @media screen and (min-width: 700px) {
+      .contact p {
+        padding: 10px 15% 0 25%; } }
+    @media screen and (min-width: 1000px) {
+      .contact p {
+        padding: 10px 25% 0 32%; } }
+
+.contactImg {
+  background-image: url(../images/postcards.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  height: 600px; }
 
 /*# sourceMappingURL=main.css.map */
