@@ -11,38 +11,36 @@
         padding-right: 15px
 #selfie:after
     @include clearIt
-.aboutInfo
-    width: 100%
-    background-color: lighten(black, 10%)
-    opacity: .6
-    p
-        color: lighten($gold, 40%)
-        font-size: 1.2em
-        font-family: $lato
-        padding: 10px 15% 10px
 .selfie
     background-image: url(../images/Selfie.jpg)
+    width: 100%
+    background-position: top
+    margin-top: -80px
     @include parallax
-    min-height: 400px
+    height: 440px
     @include mQ(500px)
-        margin-top: -120px
-        height: 500px
+        height: 600px
+        margin-top: -50px
     @include mQ(760px)
-        margin-top: -150px
         height: 760px
     @include mQ(1000px)
-        margin-top: -250px
+        margin-top: -100px
         height: 1000px
 .selfieImg2
     background-image: url(../images/postcards.jpg)
     @include parallax
-    // width: 100%
-    min-height: 440px
+    background-position: center
+    height: 400px
 .selfieImg3
-    background-image: url(../images/joshuaSilhouette_bg.jpg)
+    background-image: url(../images/maui_bg.jpg)
     @include parallax
-    // width: 100%
-    height: 440px
+    background-position: center
+    height: 400px
+.selfieImg4
+    background-image: url(../images/reflection.jpg)
+    @include parallax
+    background-position: center
+    height: 400px
 .aboutInsp
     background-color: black
     margin: 0
@@ -52,9 +50,10 @@
         background: url(../images/joshuaSilhouette_bg.jpg) bottom left no-repeat
         background-size: 100%
         margin-left: 15%
-        padding: 150px 30px 100px
+        padding: 150px 8% 100px 50px
     @include mQ (1000px)
         background-size: 80%
+        padding: 150px 12% 100px
     @include mQ (1200px)
         background-size: 70%
     h3
@@ -65,7 +64,7 @@
             margin-right: 10%
     a
         font-size: .9em
-        font-family: $actor
+        font-family: $lato
         line-height: 2
         padding-right: 10px
         color: $blue
@@ -74,8 +73,14 @@
             color: $offWhite
         @include mQ (700px)
             line-height: 1.6
-        @include mQ (1025px)
-            line-height: 1.2
+.aboutInsp .h3Insp
+    font-size: 3.6em
+    color: $rose
+    opacity: 1
+    font-weight: bold
+    font-family: $megrim
 #wrapperAbout
     @include wrapper
     background-color: black
+.octocat
+    width: 40px
