@@ -1,15 +1,24 @@
 // #CONTENT IMAGES
-.mockup100, .mockup50, .mockup25
+.mockup100, .mockup50, .mockup25, .mockup25Wrapper
     width: 100%
     height: auto
-.mockup50, .mockup25
+    background-color: $bgBody
+.mockup50, .mockup25, .mockup25Wrapper
     @include mQ (800px)
         width: 50%
         float: left
-.mockup25
+        display: inline
+.mockup25, .mockup25Wrapper
     @include mQ (1400px)
         width: 25%
         float: left
+.mockup25Wrapper
+    h1
+        margin: 0
+        padding: 35px 0 20px 3%
+    img
+        width: 100%
+        margin-bottom: -3px
 
 // JOSHUA TREE BACKGROUND IMAGE
 .joshuaTree
@@ -27,3 +36,5 @@
     display: block
     margin: -100px auto 0
     max-width: 100%
+
+
