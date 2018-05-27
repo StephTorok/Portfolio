@@ -35,7 +35,8 @@ h3.infoScTitle
     font-weight: 300
 .infoImcpPort
     @include addInfo
-    background-color: #d4bf90
+    background-color: #575361
+    // background-color: #d4bf90
 .infoImcpPortPoster
     @include addInfo
     background-color: #cc4d16
@@ -45,10 +46,9 @@ h3.infoScTitle
 .infoDakha
     @include addInfo
     background-color: #bcbdb7
-.infoBook
+.infoPoc
     @include addInfo
-    // @include clearIt
-    background-color: #bd2011
+    background-color: #93c0a7
 .infoList
     @include infoList
 .infoCopyright
@@ -65,3 +65,30 @@ h3.infoScTitle
         margin: 0
     p
         color: $offWhite
+.contact
+    @include addInfo
+    background-color: #e3d1bd
+    margin-top: -5px
+.contactImg
+    background-image: url(../images/postcards.jpg)
+    @include parallax
+    background-position: center
+    height: 600px
+.info50Left, .info50Right
+    @include addInfo
+    width: 100%
+    h3
+        font-size: 1.8em
+        color: #333
+        padding: 80px 15% 0
+        opacity: .9
+        margin: 0
+    p
+        padding: 10px 15% 0 15%
+        text-align: left
+    @include mQ (800px)
+        width: 50%
+.info50Left
+    float: left
+.info50Right
+    float: right
