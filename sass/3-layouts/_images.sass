@@ -54,3 +54,26 @@
 
 .imcpPortPerspective
     margin-bottom: 30px
+
+// POSTER
+.posterArtDeco
+    @include posterBg
+    img
+        border: solid 3px white
+        @include mQ (700px)
+            border: solid 10px white
+.posterReinvented
+    @include posterBg
+    img
+        border: solid 3px black
+        @include mQ (700px)
+            border: solid 10px black
+//.mockupReinvented
+//    @include posterBg
+//    margin: 0
+//    padding: 0
+//    background-color: $bgBody
+//    img
+//        border: solid 3px black
+//        @include mQ (700px)
+//            border: solid 10px black

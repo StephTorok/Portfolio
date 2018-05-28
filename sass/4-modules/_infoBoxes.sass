@@ -5,11 +5,15 @@
 .infoArtDeco
     @include addInfo
     background-color: #3a8d9f
+    margin-top: 50px
+    padding: 10px 0 50px
+    @include mQ (1000px)
+        padding: 10px 0 100px
 .infoTrailer
     @include addInfo
     background-color: #bf7034
     a
-        color: lighten($trailer, 25%)
+        color: lighten($trailer, 15%)
         &:hover
             color: darken($gold, 30%)
 .infoFolger
@@ -18,10 +22,10 @@
     padding-bottom: 30px
 .infoBorrego
     @include addInfo
+    h3
+        color: black
+        opacity: .2
     background-color: $borrego
-.infoGermany
-    @include addInfo
-    background-color: #c4b098
 .infoSc
     @include addInfo
     background-color: $gold
@@ -36,16 +40,19 @@ h3.infoScTitle
 .infoImcpPort
     @include addInfo
     background-color: #575361
-    // background-color: #d4bf90
+    a
+        color: lighten(#575361, 20%)
+        &:hover
+            color: #222
+            transition: 1s
+            cursor: pointer
 .infoImcpPortPoster
     @include addInfo
     background-color: #cc4d16
-.infoImcpPromo
-    @include addInfo
-    background-color: #cf6e23
-.infoDakha
-    @include addInfo
-    background-color: #bcbdb7
+    margin-top: 50px
+    padding: 10px 0 50px
+    @include mQ (1000px)
+        padding: 10px 0 100px
 .infoPoc
     @include addInfo
     background-color: #93c0a7
@@ -53,7 +60,8 @@ h3.infoScTitle
     @include infoList
 .infoCopyright
     font-size: .8em
-    color: #222
+    color: white
+    opacity: .2
 .infoAbout
     @include addInfo
     background-color: black
@@ -67,7 +75,7 @@ h3.infoScTitle
         color: $offWhite
 .contact
     @include addInfo
-    background-color: #e3d1bd
+    background-color: black
     margin-top: -5px
 .contactImg
     background-image: url(../images/postcards.jpg)
@@ -76,6 +84,7 @@ h3.infoScTitle
     height: 600px
 .info50Left, .info50Right
     @include addInfo
+    position: relative
     width: 100%
     h3
         font-size: 1.8em
@@ -83,11 +92,15 @@ h3.infoScTitle
         padding: 80px 15% 0
         opacity: .9
         margin: 0
+        @include mQ (1000px)
+            padding: 150px 15% 0
     p
         padding: 10px 15% 0 15%
         text-align: left
     @include mQ (800px)
         width: 50%
+    p:last-child
+        padding-bottom: 40px
 .info50Left
     float: left
 .info50Right
