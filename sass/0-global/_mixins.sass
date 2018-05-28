@@ -17,6 +17,7 @@
         margin-right: 0
 
 @mixin addInfo
+    margin: -50px 0 0 0
     h3
         clear: both
         padding: 80px 3% 0
@@ -93,3 +94,12 @@
         color: $offWhite
     @include mQ (700px)
         line-height: 1.6
+
+@mixin posterBg
+    box-sizing: border-box
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    img
+        padding: 0
+        max-width: 90%
