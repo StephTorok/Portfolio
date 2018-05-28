@@ -17,14 +17,11 @@
         margin-right: 0
 
 @mixin addInfo
-    margin: -50px 0 0 0
     h3
         clear: both
         padding: 80px 3% 0
         font-family: $megrim
         font-weight: bold
-        color: white
-        opacity: .2
         font-size: 5em
         margin: 0 0 -40px 0
         @include mQ (700px)
@@ -61,10 +58,12 @@
     min-width: 340px
 
 @mixin parallax
-    background-size: 100%
+    background-size: cover
     background-repeat: no-repeat
-    background-attachment: fixed
+    background-attachment: scroll
     position: relative
+    @include mQ(1000px)
+        background-attachment: fixed
 
 @mixin button
     display: block

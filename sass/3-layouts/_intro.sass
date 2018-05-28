@@ -37,8 +37,10 @@ main.videoIndex:after
 .introRemember
     font-family: $megrim
     color: $gold
-    font-size: 2em
+    font-size: 1.8em
     line-height: 1
+    @include mQ(500px)
+        font-size: 2em
     @include mQ(760px)
         font-size: 2.6em
 .ruskin
@@ -61,6 +63,18 @@ main.videoIndex:after
     position: absolute
     bottom: 200px
     margin: 0 40%
+    animation-name: upAndDown
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-funcion: linear
+@keyframes upAndDown
+    from
+        transform: translateY(0)
+    to
+        transform: translateY(-20px)
+
 
 // SPEECH BUBBLE
 #flip

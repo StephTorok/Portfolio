@@ -1,6 +1,8 @@
 // ADDITIONAL INFO BOXES
 .infoLogo
     @include addInfo
+    h3
+        color: lighten(#619f98, 10%)
     background-color: #619f98
 .infoArtDeco
     @include addInfo
@@ -11,6 +13,8 @@
         padding: 10px 0 100px
 .infoTrailer
     @include addInfo
+    h3
+        color: lighten($trailer, 15%)
     background-color: #bf7034
     a
         color: lighten($trailer, 15%)
@@ -18,16 +22,21 @@
             color: darken($gold, 30%)
 .infoFolger
     @include addInfo
+    h3
+        color: white
+        opacity: .2
     background-color: $gold
     padding-bottom: 30px
 .infoBorrego
     @include addInfo
     h3
-        color: black
-        opacity: .2
+        color: lighten($borrego, 8%)
     background-color: $borrego
 .infoSc
     @include addInfo
+    h3
+        color: white
+        opacity: .2
     background-color: $gold
 h3.infoScTitle
     color: $bgBody
@@ -39,11 +48,13 @@ h3.infoScTitle
     font-weight: 300
 .infoImcpPort
     @include addInfo
+    h3
+        color: lighten(#575361, 10%)
     background-color: #575361
     a
-        color: lighten(#575361, 20%)
+        color: lighten(#575361, 15%)
         &:hover
-            color: #222
+            color: #111
             transition: 1s
             cursor: pointer
 .infoImcpPortPoster
@@ -62,17 +73,6 @@ h3.infoScTitle
     font-size: .8em
     color: white
     opacity: .2
-.infoAbout
-    @include addInfo
-    background-color: black
-    h3
-        color: $rose
-        opacity: 1
-        font-size: 3.6em
-        font-weight: bold
-        margin: 0
-    p
-        color: $offWhite
 .contact
     @include addInfo
     background-color: black
