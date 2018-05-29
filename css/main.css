@@ -1622,4 +1622,29 @@ h3.infoScTitle {
 .info50Right {
   float: right; }
 
+.instagram {
+  background-color: #666;
+  margin-top: 10px;
+  padding: 50px 0; }
+  .instagram h2 {
+    padding: 0 5%;
+    color: #CEC7BC; }
+  .instagram ul {
+    margin: 5% 0;
+    padding: 0 0 0 25%; }
+    @media screen and (min-width: 491px) {
+      .instagram ul {
+        padding: 0 0 0 3%; } }
+  .instagram .instaLarge {
+    font-size: 2.4em;
+    color: #2af2dd;
+    padding: 0 0 0 5%; }
+    @media screen and (min-width: 700px) {
+      .instagram .instaLarge {
+        font-size: 4em; } }
+  .instagram img {
+    margin: 5px;
+    padding: 12px 12px 50px 12px;
+    background-color: #f1f0ee; }
+
 /*# sourceMappingURL=main.css.map */
