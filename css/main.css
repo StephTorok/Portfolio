@@ -79,7 +79,7 @@ body {
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  padding: 40px 0 40px;
+  padding: 40px 0 0 0;
   min-width: 340px;
   background-color: #f1f0ee; }
 
@@ -326,7 +326,7 @@ a {
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  padding: 40px 0 40px;
+  padding: 40px 0 0 0;
   min-width: 340px;
   background-color: black; }
 
@@ -428,17 +428,24 @@ a {
 
 footer {
   background-color: black;
-  opacity: 0.9;
   width: 100%;
   text-align: center;
-  height: 50px;
-  border-top: solid 2px #685636;
-  position: absolute;
-  bottom: 0; }
+  height: 100px;
+  border-top: solid 2px #685636; }
   footer p {
     color: #CEC7BC;
     font-size: 0.9em;
     font-family: "Actor", sans-serif;
+    padding-top: 5px; }
+  footer ul li {
+    display: inline-block; }
+
+.footerIndex {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.9; }
+  .footerIndex p {
     padding-top: 15px; }
 
 #coverImages {
@@ -448,6 +455,10 @@ footer {
   content: "";
   display: block;
   clear: both; }
+
+.footerLogo {
+  width: 40px;
+  padding: 15px 0 0 0; }
 
 #coverImages {
   width: 94%;
@@ -1069,51 +1080,40 @@ header .burger-nav {
   background-attachment: scroll;
   position: relative;
   background-position: center;
-  height: 300px;
-  margin-bottom: 10px; }
+  height: 100px; }
   @media screen and (min-width: 1000px) {
     .contactImg2 {
       background-attachment: fixed; } }
   @media screen and (min-width: 700px) {
     .contactImg2 {
-      height: 500px; } }
+      height: 300px; } }
   @media screen and (min-width: 1000px) {
     .contactImg2 {
-      height: 650px; } }
+      height: 400px; } }
 
 .infoContact {
   background-color: black; }
   .infoContact h3 {
-    clear: both;
-    padding: 50px 8% 0;
+    text-align: left;
+    padding: 80px 0 0 5%;
     font-family: "Megrim", cursive;
     font-weight: bold;
     color: #7F6C6D;
-    opacity: 1;
-    font-size: 3.4em;
-    margin: 0; }
+    text-align: left;
+    font-size: 3.2em;
+    margin: 0 auto; }
     @media screen and (min-width: 700px) {
       .infoContact h3 {
-        padding: 80px 12% 0; } }
-    @media screen and (min-width: 1000px) {
-      .infoContact h3 {
-        padding: 80px 20% 0; } }
+        width: 600px;
+        padding: 80px 0 20px 0; } }
   .infoContact p {
     color: #CEC7BC;
-    padding: 10px 10% 0 15%;
-    text-align: right; }
-    .infoContact p:last-child {
-      padding-bottom: 50px; }
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 5% 10px; }
     @media screen and (min-width: 700px) {
       .infoContact p {
-        padding: 10px 15% 0 25%; }
-        .infoContact p:last-child {
-          padding-bottom: 100px; } }
-    @media screen and (min-width: 1000px) {
-      .infoContact p {
-        padding: 10px 25% 0 32%; }
-        .infoContact p:last-child {
-          padding-bottom: 100px; } }
+        width: 600px; } }
 
 .contactSection {
   background-color: black;
@@ -1122,7 +1122,7 @@ header .burger-nav {
     color: #6D9EAB;
     font-size: 0.9em;
     text-align: right;
-    margin-right: 10%; }
+    margin-right: 5%; }
   .contactSection h3 {
     color: #CEC7BC;
     display: block; }
@@ -1207,18 +1207,26 @@ input:focus {
 .postcard {
   position: relative;
   background-color: black;
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  border: solid 1px #CEC7BC; }
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 700px) {
+    .postcard {
+      width: 600px;
+      height: 400px;
+      border: solid 1px #CEC7BC; } }
 
 .sendMessage {
   padding: 30px 0 20px; }
 
 .stamp {
   position: absolute;
-  top: 20px;
-  right: 20px; }
+  display: none; }
+  @media screen and (min-width: 700px) {
+    .stamp {
+      display: block;
+      opacity: 0.5;
+      top: 10px;
+      right: 12px; } }
 
 .slideshow-container {
   max-width: 20%;
