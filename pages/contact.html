@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio Stephanie Torok - About</title>
+    <title>Portfolio Stephanie Torok - Contact</title>
 
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Megrim|Lato:300,300i,400" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div id="wrapperAbout">
+<div id="wrapper">
     <header>
        <div class="logo">
         <a class="thumbVideo" href="../index.html"><img src="../images/thumbVideo.png"></a>
@@ -33,25 +33,68 @@
         </div>
     </header>
 
-    <section>
         <div class="contactImg">
 
         </div>
-<!--       <img class="mockup100" src="../images/postcards.jpg" alt="poster on wall">-->
-    </section>
-    <div class="contact">
+
+        <div class="infoContact">
             <h3>Get in touch</h3>
             <p>Thank you for your interest. I look forward to getting mail from you.</p>
+         </div>
+
+         <section class="contactSection">
 
 
+
+
+            <form method="post" class="contactForm" enctype="text/plain">
+               <div class="postcard">
+
+                <fieldset class="left">
+                    <img src="../images/stamp.png" alt="stamp logo" class="stamp">
+                     <p><span class="asterisk">*</span>Required field.</p>
+                      <ul>
+                          <li>
+                              <label for="fName">First Name:<span class="asterisk">*</span></label>
+                               <input type="text" id="fName" name="first_name" maxlength="50" placeholder="Your first name here" required autofocus>
+                          </li>
+                          <li>
+                              <label for="lName">Last Name:<span class="asterisk">*</span></label>
+                               <input type="text" id="lName" name="last_name" maxlength="50" placeholder="Your last name here" required>
+                          </li>
+                          <li>
+                              <label for="email">Email:<span class="asterisk">*</span></label>
+                              <input type="email" id="email" name="email" maxlength="50" placeholder="yourName@domain.com" required>
+                          </li>
+                          <li>
+                              <label for="phone">Phone:</label>
+                              <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+                          </li>
+                      </ul>
+               </fieldset>
+
+               <fieldset class="right">
+                   <div class="formSection">
+                     <h3 class="marg">Message:</h3>
+                       <textarea name="msg" id="msg" placeholder="Please write your message here..."></textarea>
+                   </div>
+               </fieldset>
+               </div> <!-- end div postcard-->
+               <div class="clearIt"></div>
+
+               <fieldset class="sendMessage">
+                   <input type="submit" id="submit" class="button" value="Send Message">
+               </fieldset>
+
+            </form>
+
+            </section><!-- end contactSection-->
+
+        <div class="contactImg2">
 
         </div>
-    <section>
-        <div class="contactImg">
 
-        </div>
-<!--       <img class="mockup100" src="../images/postcards.jpg" alt="poster on wall">-->
-    </section>
+
     <footer class="footerPort">
         <p>&copy; 2018 Stephanie Torok</p>
     </footer>
