@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Stephanie Torok - Instagram Feed</title>
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Lato:300,300i,400" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="../favicon.ico">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="../favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+       <div class="logo">
+        <a class="thumbVideo" href="../index.html"><img src="../images/thumbVideo.png"></a>
+       </div>
+        <div class="navPages">
+            <nav>
+                <a class="burger-nav"><img class="burgerIcon" src="../images/burgerIcon.png" alt="navigation icon"></a>
+                <ul>
+                   <li><a class="topLink" href="portfolio.html">PORTFOLIO</a>
+                   </li>
+                   <li><a class="topLink" href="about.html">ABOUT</a></li>
+                   <li><a class="topLink" href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section class="instagram">
+        <h2>A Taste of my <br><span class="instaLarge">Instagram</span></h2>
+        <ul id="igFeed"></ul>
+    </section>
+
+    <footer class="footerPort">
+       <ul>
+          <li><a href="instagram.html"><img src="../images/instagram.png" alt="instagram logo" class="footerLogo"></a></li>
+          <li><a href="https://github.com/StephTorok" target="_blank"><img src="../images/github.png" alt="github logo" class="footerLogo"></a></li>
+          <li><a href="contact.html"><img src="../images/stamp.jpg" alt="contact page logo" class="footerLogo"></a></li>
+        </ul>
+        <p>&copy; 2018 Stephanie Torok</p>
+    </footer>
+</div> <!-- end div wrapper-->
+
+
+<script>
+      $(document).ready(function(){
+          var token = '289825680.1677ed0.f076e0a2e28b4cd0af9458cd44833a41',
+             userid = 289825680,
+              num_photos = 30;
+
+            $.ajax({url:'https://api.instagram.com/v1/users/'+userid+'/media/recent', dataType:'jsonp', type: 'GET', data:{
+              access_token: token, count: num_photos},
+                  success: function(data){
+                      console.log(data);
+                      for(x in data.data){
+                            $('#igFeed').append('<img src="'+data.data[x].images.thumbnail.url+'">');
+                 } // end for loop
+            },
+            error: function (data){
+                console.log(data);
+            }
+            })
+
+        });
+
+    </script>
+    <script src="../scripts/menu.js"></script>
+</body>
+
+</html>
