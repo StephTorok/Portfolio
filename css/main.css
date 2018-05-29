@@ -438,7 +438,8 @@ footer {
     font-family: "Actor", sans-serif;
     padding-top: 5px; }
   footer ul li {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 8px; }
 
 .footerIndex {
   height: 50px;
@@ -446,7 +447,7 @@ footer {
   bottom: 0;
   opacity: 0.9; }
   .footerIndex p {
-    padding-top: 15px; }
+    padding: 15px 0 0 0; }
 
 #coverImages {
   padding: 50px 5px; }
@@ -769,9 +770,9 @@ main.videoIndex:after {
 
 @keyframes upAndDown {
   from {
-    transform: translateY(0); }
+    transform: translateY(10px); }
   to {
-    transform: translateY(-20px); } }
+    transform: translateY(-5px); } }
 #flip {
   width: 20%;
   text-align: center;
@@ -806,7 +807,7 @@ main.videoIndex:after {
   display: none;
   overflow: scroll; }
   #panel h3 {
-    font-size: 20em;
+    font-size: 14em;
     margin: 20% 0 0 12%;
     font-family: "Megrim", cursive;
     font-weight: bold;
@@ -827,7 +828,7 @@ main.videoIndex:after {
     color: #CEC7BC;
     opacity: 0.8;
     font-size: 1.2em;
-    margin-top: -140px; }
+    margin-top: -120px; }
     @media screen and (min-width: 700px) {
       #panel p {
         font-size: 1.4em;
@@ -1025,12 +1026,14 @@ header .burger-nav {
       padding-top: 150px; } }
 
 .mammoth {
+  display: block;
   width: 150px;
-  margin: -50px auto 50px; }
-  .mammoth video {
-    max-width: 150px;
-    border: solid 5px black;
-    border-radius: 15px; }
+  margin: -50px auto 50px;
+  border-radius: 15px;
+  border: solid 5px black; }
+  @media screen and (min-width: 500px) {
+    .mammoth {
+      width: 250px; } }
 
 #content, #contentPort {
   box-sizing: border-box;
@@ -1080,7 +1083,7 @@ header .burger-nav {
   background-attachment: scroll;
   position: relative;
   background-position: center;
-  height: 100px; }
+  height: 200px; }
   @media screen and (min-width: 1000px) {
     .contactImg2 {
       background-attachment: fixed; } }
@@ -1161,8 +1164,7 @@ textarea {
   padding: 1%;
   background-color: #CEC7BC;
   background-color: #080808;
-  border-bottom: solid 1px #CEC7BC;
-  border-left: solid 1px #CEC7BC; }
+  border-bottom: solid 1px #CEC7BC; }
   @media screen and (min-width: 700px) {
     textarea {
       height: 320px;
@@ -1271,7 +1273,7 @@ input:focus {
       .infoLogo h3 {
         padding: 80px 20% 0; } }
   .infoLogo p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoLogo p:last-child {
@@ -1303,7 +1305,7 @@ input:focus {
       .infoArtDeco h3 {
         padding: 80px 20% 0; } }
   .infoArtDeco p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoArtDeco p:last-child {
@@ -1334,7 +1336,7 @@ input:focus {
       .infoTrailer h3 {
         padding: 80px 20% 0; } }
   .infoTrailer p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoTrailer p:last-child {
@@ -1369,7 +1371,7 @@ input:focus {
       .infoFolger h3 {
         padding: 80px 20% 0; } }
   .infoFolger p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoFolger p:last-child {
@@ -1400,7 +1402,7 @@ input:focus {
       .infoBorrego h3 {
         padding: 80px 20% 0; } }
   .infoBorrego p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoBorrego p:last-child {
@@ -1430,7 +1432,7 @@ input:focus {
       .infoSc h3 {
         padding: 80px 20% 0; } }
   .infoSc p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoSc p:last-child {
@@ -1470,7 +1472,7 @@ h3.infoScTitle {
       .infoImcpPort h3 {
         padding: 80px 20% 0; } }
   .infoImcpPort p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoImcpPort p:last-child {
@@ -1508,7 +1510,7 @@ h3.infoScTitle {
       .infoImcpPortPoster h3 {
         padding: 80px 20% 0; } }
   .infoImcpPortPoster p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoImcpPortPoster p:last-child {
@@ -1539,7 +1541,7 @@ h3.infoScTitle {
       .infoPoc h3 {
         padding: 80px 20% 0; } }
   .infoPoc p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .infoPoc p:last-child {
@@ -1585,7 +1587,7 @@ h3.infoScTitle {
       .info50Left h3, .info50Right h3 {
         padding: 80px 20% 0; } }
   .info50Left p, .info50Right p {
-    padding: 10px 10% 0 15%;
+    padding: 10px 10% 0 19%;
     text-align: right;
     color: black; }
     .info50Left p:last-child, .info50Right p:last-child {
@@ -1599,12 +1601,12 @@ h3.infoScTitle {
   .info50Left h3, .info50Right h3 {
     font-size: 1.8em;
     color: #333;
-    padding: 80px 15% 0;
+    padding: 40px 15% 0;
     opacity: 0.9;
     margin: 0; }
     @media screen and (min-width: 1000px) {
       .info50Left h3, .info50Right h3 {
-        padding: 150px 15% 0; } }
+        padding: 100px 15% 0; } }
   .info50Left p, .info50Right p {
     padding: 10px 15% 0 15%;
     text-align: left; }

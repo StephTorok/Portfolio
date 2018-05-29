@@ -1,8 +1,4 @@
 //// CONTACT PAGE
-//.contact
-//    @include addInfo
-//    background-color: black
-//    margin-top: -5px
 .contactImg
     margin-top: 10px
     background-image: url(../images/postcards.jpg)
@@ -17,7 +13,7 @@
     background-image: url(../images/postcards_plain.jpg)
     @include parallax
     background-position: center
-    height: 100px
+    height: 200px
     @include mQ (700px)
         height: 300px
     @include mQ (1000px)
@@ -87,7 +83,7 @@ textarea
     background-color: $offWhite
     background-color: lighten(black, 3%)
     border-bottom: solid 1px $offWhite
-    border-left: solid 1px $offWhite
+    // border-left: solid 1px $offWhite
     @include mQ (700px)
         height: 320px
         border-bottom: none
