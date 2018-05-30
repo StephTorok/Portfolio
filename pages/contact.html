@@ -15,10 +15,10 @@
 </head>
 
 <body>
-<div id="wrapper">
+    <div id="wrapper">
     <header>
        <div class="logo">
-        <a class="thumbVideo" href="../index.html"><img src="../images/thumbVideo.png"></a>
+        <a class="thumbVideo" href="../index.html"><img src="../images/thumbVideo.png" alt="video logo"></a>
        </div>
         <div class="navPages">
             <nav>
@@ -33,9 +33,7 @@
         </div>
     </header>
 
-        <div class="contactImg">
-
-        </div>
+        <div class="contactImg"></div>
 
         <div class="infoContact">
             <h3>Get In Touch</h3>
@@ -44,11 +42,8 @@
 
          <section class="contactSection">
 
-
-
-
             <form action="https://formspree.io/steph.toeroek@gmail.com"
-              method="POST" class="contactForm" enctype="text/plain">
+              method="post" class="contactForm">
                <div class="postcard">
 
                 <fieldset class="left">
@@ -57,7 +52,7 @@
                       <ul>
                           <li>
                               <label for="fName">First Name:<span class="asterisk">*</span></label>
-                               <input type="text" id="fName" name="first_name" maxlength="50" placeholder="Your first name here" required autofocus>
+                               <input type="text" id="fName" name="first_name" maxlength="50" placeholder="Your first name here" required>
                           </li>
                           <li>
                               <label for="lName">Last Name:<span class="asterisk">*</span></label>
@@ -113,10 +108,9 @@
         </ul>
         <p>&copy; 2018 Stephanie Torok</p>
     </footer>
+
 </div> <!-- end div wrapper-->
-
-</body>
-
 <script src="../scripts/menu.js"></script>
+</body>
 
 </html>
